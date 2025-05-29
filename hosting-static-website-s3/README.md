@@ -1,6 +1,6 @@
 # Hosting a Static Website with Amazon S3
 
-![architecture](https://github.com/user-attachments/assets/8e1b35a0-1ce5-4698-9a3d-7759eb37f8ea)
+![Screenshot 2025-05-29 101736](https://github.com/user-attachments/assets/a3cc65fb-7d44-4af9-9809-a33343df60b4)
 
 This project demonstrates how to host a static website on AWS S3 and speed up content delivery using CloudFront. It includes the complete step-by-step tutorial, sample static website files, and helpful images.
 
