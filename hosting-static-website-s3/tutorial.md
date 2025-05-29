@@ -32,7 +32,7 @@ Before you begin, ensure you have the following:
 
 1. **Log in** to your [AWS Management Console](https://aws.amazon.com/).
 2. Navigate to the **S3** service.
-3. Click **Create bucket**.
+3. Click **Create bucket**.![image](https://github.com/user-attachments/assets/8e7b6ee1-e337-40d3-a2e4-0f813a953773)
 4. Enter a globally unique **Bucket name** — this will form part of your website’s public URL (e.g., `my-website-bucket`).
 5. Select the AWS **Region** closest to your main audience.
 6. Leave other options at their default settings for now.
@@ -47,7 +47,8 @@ Before you begin, ensure you have the following:
 1. In your bucket list, **click** your new bucket to open it.
 2. Go to the **Properties** tab.
 3. Scroll to **Static website hosting** and click **Edit**.
-4. Select **Enable**.
+4. Select **Enable**.![image](https://github.com/user-attachments/assets/7fe6a8ce-6f3d-4fb9-bb5d-e99d01254c92)
+
 5. Specify your **Index document** (usually `index.html`).
 6. (Optional) Set an **Error document** (e.g., `error.html`) for friendly error pages.
 7. Click **Save changes**.
@@ -61,7 +62,8 @@ You’ll see an **Endpoint** URL—this is your website’s public address!
 1. Open your bucket and go to the **Objects** tab.
 2. Click **Upload**.
 3. Choose **Add files** and select your website files (`index.html`, CSS, JS, images, etc.).
-4. Click **Upload**.
+4. Click **Upload**.![image](https://github.com/user-attachments/assets/7f5626c1-93ba-40c0-822a-9c0f3dd82e20)
+
 
 > **Note:** Keep your file structure intact (e.g., folders for images or scripts) to avoid broken links.
 
@@ -75,7 +77,8 @@ S3 buckets are private by default. To let the world see your site:
 
 1. Go to the **Permissions** tab.
 2. Click **Edit** under **Block public access (bucket settings)**.
-3. Uncheck **Block all public access**.
+3. Uncheck **Block all public access**.![image](https://github.com/user-attachments/assets/34ac7b36-3518-4ea6-a7c1-116b2ced57c2)
+
 4. Confirm your selection and click **Save changes**.
 
 ### B. Attach a Bucket Policy
@@ -113,12 +116,14 @@ S3 buckets are private by default. To let the world see your site:
 
 ## Bonus: Connect a Custom Domain
 
+![architecture](https://github.com/user-attachments/assets/8e1b35a0-1ce5-4698-9a3d-7759eb37f8ea)
+
 Give your website a professional touch by linking it to your own domain name:
 
 1. **Register a Domain:** Use [Route 53](https://aws.amazon.com/route53/) or any registrar.
 2. **Create a Hosted Zone:** If using Route 53, set up a hosted zone for your domain.
 3. **Set DNS Records:** Point your domain (A or CNAME record) to the S3 site endpoint.
-4. **Enable HTTPS (Recommended):** Use [CloudFront](https://aws.amazon.com/cloudfront/) and [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) to serve your site securely.
+4. **Enable HTTPS (Recommended):** Use [CloudFront](https://aws.amazon.com/cloudfront/) to serve your site securely.
 
 > For a detailed walkthrough, see [AWS: Using a custom domain for a static website](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html#website-hosting-custom-domain-walkthrough).
 
