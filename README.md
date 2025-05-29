@@ -20,9 +20,9 @@ README.md
 
 This repository provides a collection of AWS projects organized by skill level:
 
-- [Basic/](./basic) — Beginner-level AWS projects
-- [Intermediate/](./intermediate) — Intermediate-level AWS projects
-- [Advanced/](./advanced) — Advanced AWS projects
+- [Basic/](./1-Basic) — Beginner-level AWS projects
+- [Intermediate/](./2-Intermediate) — Intermediate-level AWS projects
+- [Advanced/](./3-Advanced) — Advanced AWS projects
 
 ---
 
